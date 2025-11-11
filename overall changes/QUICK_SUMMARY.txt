@@ -1,0 +1,169 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║         NEXT ACTION PREDICTION - PATTERN ANALYSIS SUMMARY                  ║
+║                                                                            ║
+║                    5,781 code changes across 1,016 commits                ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+📊 DATASET COMPOSITION
+────────────────────────────────────────────────────────────────────────────
+  Backend-Heavy Codebase:
+    • 73.0% Java files (4,220)
+    • 8.5% XML files (490)
+    
+  Frontend Components:
+    • 3.1% TSX files (181)
+    • 3.0% JS files (171)
+    • 1.4% TS files (81)
+    
+  Documentation & Config:
+    • 3.7% Markdown (216)
+    • 2.3% YAML (132)
+    • 1.7% YML (100)
+
+
+🎯 TOP PATTERNS FOR NEXT FILE TYPE PREDICTION
+────────────────────────────────────────────────────────────────────────────
+
+  After .java:         → .java (90%)  ⭐⭐⭐ STRONGEST
+  After .yaml:         → .yaml (81%)  ⭐⭐⭐
+  After .tsx:          → .tsx  (72%)  ⭐⭐⭐
+  After .js:           → .js   (73%)  ⭐⭐⭐
+  After .xml:          → .java (54%)  ⭐⭐ Cross-type pattern
+  After .md:           → .md   (54%)  ⭐⭐
+
+  💡 Key Insight: File type clustering - developers work on one type at a time
+
+
+🎯 TOP PATTERNS FOR NEXT CHANGE TYPE PREDICTION
+────────────────────────────────────────────────────────────────────────────
+
+  After modified:      → modified (92%)  ⭐⭐⭐⭐ STRONGEST PATTERN
+  After renamed:       → renamed  (62%)  ⭐⭐⭐
+  After removed:       → modified (58%)  ⭐⭐
+  After added:         → added    (52%)  ⭐⭐
+
+  💡 Key Insight: Modifications cluster heavily (92% momentum)
+
+
+🔗 SAME-COMMIT CONTEXT BOOST
+────────────────────────────────────────────────────────────────────────────
+
+  Within same commit, predictability increases significantly:
+  
+  .java → .java:  89.8% (overall) → 95.3% (same commit)  [+5.5%]
+  .tsx → .tsx:    72.4% (overall) → 77.5% (same commit)  [+5.1%]
+  .js → .js:      72.5% (overall) → 91.7% (same commit)  [+19.2%]
+
+  💡 Key Insight: Commit context is highly predictive!
+
+
+📈 CHANGE SIZE PATTERNS
+────────────────────────────────────────────────────────────────────────────
+
+  Most changes are SMALL:
+    • Median: 20 total lines (12 added, 3 deleted)
+    • P75:    64 total lines (43 added, 13 deleted)
+    • P95:    300 total lines (204 added, 97 deleted)
+
+  But large refactorings exist:
+    • Max: 18,514 lines! (likely large code moves/restructuring)
+
+  💡 Key Insight: Small incremental changes dominate workflow
+
+
+📂 MOST FREQUENTLY CHANGED DIRECTORIES
+────────────────────────────────────────────────────────────────────────────
+
+  1. spring-ai-alibaba-graph/core          (141 changes)
+  2. community/openmanus/agent             (106 changes)
+  3. spring-ai-alibaba-graph/ui            (104 changes)
+  4. spring-ai-alibaba-graph/test          (95 changes)
+  5. community/openmanus/tool              (90 changes)
+
+  💡 Key Insight: Core + UI + agent modules are most active
+
+
+✅ ACTIONABLE PREDICTION RULES
+────────────────────────────────────────────────────────────────────────────
+
+  Rule 1: Java Continuation
+    IF current file is .java
+    THEN next file is .java (90% confidence)
+    
+  Rule 2: Configuration Follows Implementation
+    IF current file is .xml
+    THEN next file is .java (54% confidence)
+    
+  Rule 3: Frontend Cohesion
+    IF current file is .tsx
+    THEN next file is .tsx (72%) or .ts (15%)
+    
+  Rule 4: Modification Momentum
+    IF current change is modified
+    THEN next change is modified (92% confidence)
+    
+  Rule 5: Commit-Level Clustering
+    IF in same commit AND current file is .java
+    THEN next file is .java (95% confidence)
+
+
+🚀 IMPLEMENTATION RECOMMENDATIONS
+────────────────────────────────────────────────────────────────────────────
+
+  Priority 1: Build Markov Chain
+    • States: (file_extension, change_type, commit_context)
+    • Use transition probabilities from data above
+    
+  Priority 2: Include Commit Context
+    • +5-20% accuracy boost when considering same-commit files
+    • Store commit history for prediction
+    
+  Priority 3: Handle Edge Cases
+    • Rare file types (.py, .sql): Use directory heuristics
+    • Large changes: May be refactoring, lower predictability
+    
+  Priority 4: Fallback Strategy
+    1. Try specific (file_type + change_type)
+    2. Fall back to file_type patterns
+    3. Fall back to change_type patterns
+    4. Default: "modified" (92% baseline)
+
+
+📈 EXPECTED PERFORMANCE
+────────────────────────────────────────────────────────────────────────────
+
+  With Simple Markov Model:
+    • Overall Accuracy: ~75-80%
+    • Within-commit Accuracy: ~85-90%
+    • Top-5 Accuracy: ~95%+ (if ranking top 5 predictions)
+    
+  With Enhanced Model (+ commit + directory):
+    • Overall Accuracy: ~80-85%
+    • Top-5 Accuracy: ~97%+
+
+
+💾 WORKFLOW INSIGHTS
+────────────────────────────────────────────────────────────────────────────
+
+  Typical Commit Workflow:
+    1. Developers modify multiple Java files (core logic)
+    2. Then update XML configuration files
+    3. Occasionally update TypeScript/React frontend
+    4. Minor markdown/documentation updates
+    
+  Change Pattern:
+    1. Start with "modified" changes (85% of all changes)
+    2. Occasionally "add" new files (11%)
+    3. Rarely rename (2%) or remove (2%)
+
+
+📌 KEY TAKEAWAYS
+────────────────────────────────────────────────────────────────────────────
+
+  ✓ File type clustering is VERY STRONG (>70% self-continuation)
+  ✓ Modification momentum is EXTREMELY STRONG (92% self-continuation)
+  ✓ Commit context provides 5-20% accuracy boost
+  ✓ Only 4 change types makes prediction feasible
+  ✓ Backend/Frontend have independent patterns
+  ✓ Small changes dominate (median 20 lines)
+

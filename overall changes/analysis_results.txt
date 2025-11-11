@@ -1,0 +1,273 @@
+================================================================================
+PATTERN ANALYSIS FOR NEXT ACTION PREDICTION
+================================================================================
+
+Dataset Overview:
+  Total items: 5781
+  Unique file extensions: 16
+  Unique change types: 4
+  Unique commits: 1016
+
+================================================================================
+1. FILE EXTENSION DISTRIBUTION
+================================================================================
+  .java        :   4220 ( 73.0%)
+  .xml         :    490 (  8.5%)
+  .md          :    216 (  3.7%)
+  .tsx         :    181 (  3.1%)
+  .js          :    171 (  3.0%)
+  .yaml        :    132 (  2.3%)
+  .yml         :    100 (  1.7%)
+  .ts          :     81 (  1.4%)
+  .html        :     62 (  1.1%)
+  .json        :     61 (  1.1%)
+  .css         :     40 (  0.7%)
+  .py          :     11 (  0.2%)
+  .txt         :      7 (  0.1%)
+  .sql         :      5 (  0.1%)
+  .less        :      3 (  0.1%)
+  .conf        :      1 (  0.0%)
+
+================================================================================
+2. CHANGE TYPE DISTRIBUTION
+================================================================================
+  modified            :   4925 ( 85.2%)
+  added               :    649 ( 11.2%)
+  renamed             :    111 (  1.9%)
+  removed             :     96 (  1.7%)
+
+================================================================================
+3. NEXT FILE TYPE PREDICTION PATTERNS
+(What file extension comes after each type)
+================================================================================
+
+  After .java files (4219 transitions):
+    → .java        :  3788x ( 89.8%)
+    → .xml         :   207x (  4.9%)
+    → .md          :    67x (  1.6%)
+    → .yml         :    54x (  1.3%)
+    → .js          :    26x (  0.6%)
+
+  After .xml files (490 transitions):
+    → .java        :   262x ( 53.5%)
+    → .xml         :   202x ( 41.2%)
+    → .md          :    10x (  2.0%)
+    → .yml         :     6x (  1.2%)
+    → .yaml        :     4x (  0.8%)
+
+  After .md files (216 transitions):
+    → .md          :   117x ( 54.2%)
+    → .java        :    53x ( 24.5%)
+    → .xml         :    32x ( 14.8%)
+    → .yml         :     5x (  2.3%)
+    → .ts          :     3x (  1.4%)
+
+  After .tsx files (181 transitions):
+    → .tsx         :   131x ( 72.4%)
+    → .ts          :    27x ( 14.9%)
+    → .java        :     7x (  3.9%)
+    → .xml         :     5x (  2.8%)
+    → .json        :     4x (  2.2%)
+
+  After .js files (171 transitions):
+    → .js          :   124x ( 72.5%)
+    → .java        :    22x ( 12.9%)
+    → .html        :     8x (  4.7%)
+    → .xml         :     6x (  3.5%)
+    → .css         :     5x (  2.9%)
+
+  After .yaml files (132 transitions):
+    → .yaml        :   107x ( 81.1%)
+    → .java        :    12x (  9.1%)
+    → .tsx         :     5x (  3.8%)
+    → .json        :     2x (  1.5%)
+    → .xml         :     2x (  1.5%)
+
+  After .yml files (100 transitions):
+    → .yml         :    31x ( 31.0%)
+    → .java        :    29x ( 29.0%)
+    → .xml         :    17x ( 17.0%)
+    → .md          :    10x ( 10.0%)
+    → .yaml        :     6x (  6.0%)
+
+  After .ts files (81 transitions):
+    → .ts          :    34x ( 42.0%)
+    → .java        :    18x ( 22.2%)
+    → .tsx         :    15x ( 18.5%)
+    → .xml         :     6x (  7.4%)
+    → .json        :     3x (  3.7%)
+
+  After .html files (62 transitions):
+    → .html        :    31x ( 50.0%)
+    → .js          :    16x ( 25.8%)
+    → .java        :     7x ( 11.3%)
+    → .xml         :     3x (  4.8%)
+    → .css         :     2x (  3.2%)
+
+  After .json files (61 transitions):
+    → .json        :    30x ( 49.2%)
+    → .java        :    10x ( 16.4%)
+    → .tsx         :     5x (  8.2%)
+    → .xml         :     5x (  8.2%)
+    → .yaml        :     4x (  6.6%)
+
+================================================================================
+4. NEXT CHANGE TYPE PREDICTION PATTERNS
+(What change type comes after each type)
+================================================================================
+
+  After 'modified' changes (4924 transitions):
+    → 'modified       ':  4540x ( 92.2%)
+    → 'added          ':   291x (  5.9%)
+    → 'removed        ':    61x (  1.2%)
+    → 'renamed        ':    32x (  0.6%)
+
+  After 'added' changes (649 transitions):
+    → 'added          ':   334x ( 51.5%)
+    → 'modified       ':   298x ( 45.9%)
+    → 'removed        ':     9x (  1.4%)
+    → 'renamed        ':     8x (  1.2%)
+
+  After 'renamed' changes (111 transitions):
+    → 'renamed        ':    69x ( 62.2%)
+    → 'modified       ':    31x ( 27.9%)
+    → 'added          ':    10x (  9.0%)
+    → 'removed        ':     1x (  0.9%)
+
+  After 'removed' changes (96 transitions):
+    → 'modified       ':    56x ( 58.3%)
+    → 'removed        ':    25x ( 26.0%)
+    → 'added          ':    13x ( 13.5%)
+    → 'renamed        ':     2x (  2.1%)
+
+================================================================================
+5. COMMIT-BASED PATTERNS
+================================================================================
+
+  Commits analyzed: 1016
+  Commits with multiple changes: 988 (97.2%)
+  Average files per commit: 5.69
+
+  Within-commit file type sequences (top extensions):
+
+    After .java (same commit):
+      → .java: 3365x (95.3%)
+      → .xml: 64x (1.8%)
+      → .yml: 35x (1.0%)
+
+    After .xml (same commit):
+      → .java: 211x (51.8%)
+      → .xml: 186x (45.7%)
+      → .yml: 4x (1.0%)
+
+    After .md (same commit):
+      → .md: 101x (62.7%)
+      → .java: 28x (17.4%)
+      → .xml: 21x (13.0%)
+
+    After .tsx (same commit):
+      → .tsx: 124x (77.5%)
+      → .ts: 27x (16.9%)
+      → .css: 3x (1.9%)
+
+    After .js (same commit):
+      → .js: 122x (91.7%)
+      → .html: 6x (4.5%)
+      → .css: 3x (2.3%)
+
+================================================================================
+6. CODE CHANGE SIZE DISTRIBUTION
+================================================================================
+
+  Lines Added:
+    Mean: 63.9, Min: 0, Max: 14083
+    P50: 12, P75: 43, P95: 204
+
+  Lines Deleted:
+    Mean: 79.7, Min: 0, Max: 18514
+    P50: 3, P75: 13, P95: 97
+
+  Total Changes (Added + Deleted):
+    Mean: 143.6, Min: 0, Max: 18514
+    P50: 20, P75: 64, P95: 300
+
+================================================================================
+7. KEY INSIGHTS FOR NEXT ACTION PREDICTION
+================================================================================
+
+  HIGH-CONFIDENCE EXTENSION PATTERNS (>35%):
+    • After .java         → likely .java         (90%)
+    • After .xml          → likely .java         (53%)
+    • After .md           → likely .md           (54%)
+    • After .tsx          → likely .tsx          (72%)
+    • After .js           → likely .js           (73%)
+    • After .yaml         → likely .yaml         (81%)
+    • After .ts           → likely .ts           (42%)
+
+  HIGH-CONFIDENCE CHANGE-TYPE PATTERNS (>35%):
+    • After 'modified       ' → likely 'modified       ' (92%)
+    • After 'added          ' → likely 'added          ' (51%)
+    • After 'renamed        ' → likely 'renamed        ' (62%)
+    • After 'removed        ' → likely 'modified       ' (58%)
+
+  DIRECTORY/FILE CHANGE PATTERNS:
+    Most frequently changed directories:
+      • spring-ai-alibaba-graph/spring-ai-alibaba-graph-core/src/main/java/com/alibaba/cloud/ai/graph: 141 changes (modified: 135x)
+      • community/openmanus/src/main/java/com/alibaba/cloud/ai/example/manus/agent: 106 changes (modified: 101x)
+      • spring-ai-alibaba-graph/spring-ai-alibaba-graph-studio/graph-ui: 104 changes (modified: 103x)
+      • spring-ai-alibaba-graph/spring-ai-alibaba-graph-core/src/test/java/com/alibaba/cloud/ai/graph: 95 changes (modified: 81x)
+      • community/openmanus/src/main/java/com/alibaba/cloud/ai/example/manus/tool: 90 changes (modified: 88x)
+
+================================================================================
+8. SAMPLE DATA POINTS
+================================================================================
+
+  Sample 1:
+    Commit: Initial commit
+    File: .../README.md
+    Type: .md           | Change: added
+    Changes: +   1 -   0 (total: 1)
+
+  Sample 2:
+    Commit: update playground example
+    File: .../generated/vaadin.ts
+    Type: .ts           | Change: modified
+    Changes: +  26 -   0 (total: 26)
+
+  Sample 3:
+    Commit: update playground example
+    File: .../views/@index.tsx
+    Type: .tsx          | Change: modified
+    Changes: +   3 -   4 (total: 7)
+
+  Sample 4:
+    Commit: update playground example
+    File: .../views/@index.tsx
+    Type: .tsx          | Change: modified
+    Changes: +   3 -   4 (total: 7)
+
+  Sample 5:
+    Commit: update playground example
+    File: .../data/Customer.java
+    Type: .java         | Change: modified
+    Changes: +   7 -  17 (total: 24)
+
+  Sample 6:
+    Commit: update playground example
+    File: .../services/BookingTools.java
+    Type: .java         | Change: modified
+    Changes: +  11 -  13 (total: 24)
+
+  Sample 7:
+    Commit: update playground example
+    File: .../services/CustomerSupportAssistant.java
+    Type: .java         | Change: modified
+    Changes: +  11 -  11 (total: 22)
+
+  Sample 8:
+    Commit: update playground example
+    File: .../services/FlightBookingService.java
+    Type: .java         | Change: modified
+    Changes: +  13 -  18 (total: 31)
+
+================================================================================
