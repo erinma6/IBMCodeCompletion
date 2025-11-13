@@ -1,0 +1,136 @@
+====================================================================================================
+COMMITS WITH GETTER/SETTER CHANGES
+====================================================================================================
+
+Total commits with getter/setter changes: 857
+
+
+TOP 20 COMMITS BY NUMBER OF GETTER/SETTER CHANGES:
+----------------------------------------------------------------------------------------------------
+
+1. Index: 5701
+   Getters: 58, Setters: 39
+   Message: (empty)
+   Getter fields: [('public', 'Client'), ('public', 'Server'), ('public', 'BaseUrl'), ('public', 'BaseUrl'), ('public', 'TimeoutSeconds'), ('public', 'TimeoutSeconds'), ('public', 'MaxRetryAttempts'), ('public', 'Version'), ('public', 'VectorStore'), ('public', 'GraphStore'), ('public', 'Llm'), ('public', 'Embedder'), ('public', 'HistoryDbPath'), ('public', 'Project'), ('public', 'CustomFactExtractionPrompt'), ('public', 'CustomUpdateMemoryPrompt'), ('public', 'CustomCategories'), ('public', 'CustomCategories'), ('public', 'CustomInstructions'), ('public', 'Provider'), ('public', 'Provider'), ('public', 'Provider'), ('public', 'Provider'), ('public', 'Config'), ('public', 'Llm'), ('public', 'CustomPrompt'), ('public', 'Url'), ('public', 'Url'), ('public', 'Username'), ('public', 'Password'), ('public', 'Database'), ('public', 'BaseLabel'), ('public', 'Provider'), ('public', 'Provider'), ('public', 'Config'), ('public', 'ApiKey'), ('public', 'ApiKey'), ('public', 'Temperature'), ('public', 'Model'), ('public', 'OpenaiBaseUrl'), ('public', 'Provider'), ('public', 'Provider'), ('public', 'Config'), ('public', 'ApiKey'), ('public', 'ApiKey'), ('public', 'Model'), ('public', 'OpenaiBaseUrl'), ('public', 'Version'), ('public', 'VectorStore'), ('public', 'GraphStore'), ('public', 'Llm'), ('public', 'Embedder'), ('public', 'HistoryDbPath'), ('public', 'Project'), ('public', 'CustomFactExtractionPrompt'), ('public', 'CustomUpdateMemoryPrompt'), ('public', 'Client'), ('public', 'Server')]
+   Setter fields: [('public', 'BaseUrl'), ('public', 'EnableCache'), ('public', 'TimeoutSeconds'), ('public', 'MaxRetryAttempts'), ('public', 'CustomFactExtractionPrompt'), ('public', 'CustomUpdateMemoryPrompt'), ('public', 'CustomCategories'), ('public', 'CustomCategories'), ('public', 'CustomInstructions'), ('public', 'Provider'), ('public', 'Config'), ('public', 'Provider'), ('public', 'Config'), ('public', 'Llm'), ('public', 'Url'), ('public', 'Username'), ('public', 'Password'), ('public', 'Provider'), ('public', 'Config'), ('public', 'ApiKey'), ('public', 'Temperature'), ('public', 'Model'), ('public', 'OpenaiBaseUrl'), ('public', 'Provider'), ('public', 'Config'), ('public', 'ApiKey'), ('public', 'Model'), ('public', 'OpenaiBaseUrl'), ('public', 'Version'), ('public', 'VectorStore'), ('public', 'GraphStore'), ('public', 'Llm'), ('public', 'Embedder'), ('public', 'HistoryDbPath'), ('public', 'Project'), ('public', 'CustomFactExtractionPrompt'), ('public', 'CustomUpdateMemoryPrompt'), ('public', 'Client'), ('public', 'Server')]
+
+2. Index: 5702
+   Getters: 58, Setters: 39
+   Message: (empty)
+   Getter fields: [('public', 'Client'), ('public', 'Server'), ('public', 'BaseUrl'), ('public', 'BaseUrl'), ('public', 'TimeoutSeconds'), ('public', 'TimeoutSeconds'), ('public', 'MaxRetryAttempts'), ('public', 'Version'), ('public', 'VectorStore'), ('public', 'GraphStore'), ('public', 'Llm'), ('public', 'Embedder'), ('public', 'HistoryDbPath'), ('public', 'Project'), ('public', 'CustomFactExtractionPrompt'), ('public', 'CustomUpdateMemoryPrompt'), ('public', 'CustomCategories'), ('public', 'CustomCategories'), ('public', 'CustomInstructions'), ('public', 'Provider'), ('public', 'Provider'), ('public', 'Provider'), ('public', 'Provider'), ('public', 'Config'), ('public', 'Llm'), ('public', 'CustomPrompt'), ('public', 'Url'), ('public', 'Url'), ('public', 'Username'), ('public', 'Password'), ('public', 'Database'), ('public', 'BaseLabel'), ('public', 'Provider'), ('public', 'Provider'), ('public', 'Config'), ('public', 'ApiKey'), ('public', 'ApiKey'), ('public', 'Temperature'), ('public', 'Model'), ('public', 'OpenaiBaseUrl'), ('public', 'Provider'), ('public', 'Provider'), ('public', 'Config'), ('public', 'ApiKey'), ('public', 'ApiKey'), ('public', 'Model'), ('public', 'OpenaiBaseUrl'), ('public', 'Version'), ('public', 'VectorStore'), ('public', 'GraphStore'), ('public', 'Llm'), ('public', 'Embedder'), ('public', 'HistoryDbPath'), ('public', 'Project'), ('public', 'CustomFactExtractionPrompt'), ('public', 'CustomUpdateMemoryPrompt'), ('public', 'Client'), ('public', 'Server')]
+   Setter fields: [('public', 'BaseUrl'), ('public', 'EnableCache'), ('public', 'TimeoutSeconds'), ('public', 'MaxRetryAttempts'), ('public', 'CustomFactExtractionPrompt'), ('public', 'CustomUpdateMemoryPrompt'), ('public', 'CustomCategories'), ('public', 'CustomCategories'), ('public', 'CustomInstructions'), ('public', 'Provider'), ('public', 'Config'), ('public', 'Provider'), ('public', 'Config'), ('public', 'Llm'), ('public', 'Url'), ('public', 'Username'), ('public', 'Password'), ('public', 'Provider'), ('public', 'Config'), ('public', 'ApiKey'), ('public', 'Temperature'), ('public', 'Model'), ('public', 'OpenaiBaseUrl'), ('public', 'Provider'), ('public', 'Config'), ('public', 'ApiKey'), ('public', 'Model'), ('public', 'OpenaiBaseUrl'), ('public', 'Version'), ('public', 'VectorStore'), ('public', 'GraphStore'), ('public', 'Llm'), ('public', 'Embedder'), ('public', 'HistoryDbPath'), ('public', 'Project'), ('public', 'CustomFactExtractionPrompt'), ('public', 'CustomUpdateMemoryPrompt'), ('public', 'Client'), ('public', 'Server')]
+
+3. Index: 5406
+   Getters: 39, Setters: 46
+   Message: (empty)
+   Getter fields: [('public', 'Id'), ('public', 'Object'), ('public', 'Created'), ('public', 'Model'), ('public', 'SystemFingerprint'), ('public', 'Usage'), ('public', 'Index'), ('public', 'Message'), ('public', 'Delta'), ('public', 'FinishReason'), ('public', 'Logprobs'), ('public', 'Role'), ('public', 'Content'), ('public', 'FunctionCall'), ('public', 'Role'), ('public', 'Content'), ('public', 'FunctionCall'), ('public', 'PromptTokens'), ('public', 'CompletionTokens'), ('public', 'TotalTokens'), ('public', 'PromptTokensDetails'), ('public', 'CompletionTokensDetails'), ('public', 'CachedTokens'), ('public', 'AudioTokens'), ('public', 'ReasoningTokens'), ('public', 'AudioTokens'), ('public', 'AcceptedPredictionTokens'), ('public', 'RejectedPredictionTokens'), ('public', 'Name'), ('public', 'Arguments'), ('public', 'Id'), ('public', 'Type'), ('public', 'Function'), ('public', 'Name'), ('public', 'Arguments'), ('public', 'Token'), ('public', 'Logprob'), ('public', 'Token'), ('public', 'Logprob')]
+   Setter fields: [('public', 'Id'), ('public', 'Object'), ('public', 'Created'), ('public', 'Model'), ('public', 'SystemFingerprint'), ('public', 'Choices'), ('public', 'Usage'), ('public', 'Index'), ('public', 'Message'), ('public', 'Delta'), ('public', 'FinishReason'), ('public', 'Logprobs'), ('public', 'Role'), ('public', 'Content'), ('public', 'FunctionCall'), ('public', 'ToolCalls'), ('public', 'Role'), ('public', 'Content'), ('public', 'FunctionCall'), ('public', 'ToolCalls'), ('public', 'PromptTokens'), ('public', 'CompletionTokens'), ('public', 'TotalTokens'), ('public', 'PromptTokensDetails'), ('public', 'CompletionTokensDetails'), ('public', 'CachedTokens'), ('public', 'AudioTokens'), ('public', 'ReasoningTokens'), ('public', 'AudioTokens'), ('public', 'AcceptedPredictionTokens'), ('public', 'RejectedPredictionTokens'), ('public', 'Name'), ('public', 'Arguments'), ('public', 'Id'), ('public', 'Type'), ('public', 'Function'), ('public', 'Name'), ('public', 'Arguments'), ('public', 'Content'), ('public', 'Token'), ('public', 'Logprob'), ('public', 'Bytes'), ('public', 'TopLogprobs'), ('public', 'Token'), ('public', 'Logprob'), ('public', 'Bytes')]
+
+4. Index: 5405
+   Getters: 31, Setters: 35
+   Message: (empty)
+   Getter fields: [('public', 'Model'), ('public', 'Temperature'), ('public', 'TopP'), ('public', 'MaxTokens'), ('public', 'Stream'), ('public', 'StreamOptions'), ('public', 'FunctionCall'), ('public', 'ToolChoice'), ('public', 'User'), ('public', 'Seed'), ('public', 'N'), ('public', 'Stop'), ('public', 'FrequencyPenalty'), ('public', 'PresencePenalty'), ('public', 'LogitBias'), ('public', 'Logprobs'), ('public', 'TopLogprobs'), ('public', 'Role'), ('public', 'Content'), ('public', 'RawContent'), ('public', 'Name'), ('public', 'FunctionCall'), ('public', 'Name'), ('public', 'Description'), ('public', 'Type'), ('public', 'Function'), ('public', 'Name'), ('public', 'Arguments'), ('public', 'Id'), ('public', 'Type'), ('public', 'Function')]
+   Setter fields: [('public', 'Model'), ('public', 'Messages'), ('public', 'Temperature'), ('public', 'TopP'), ('public', 'MaxTokens'), ('public', 'Stream'), ('public', 'StreamOptions'), ('public', 'Functions'), ('public', 'FunctionCall'), ('public', 'Tools'), ('public', 'ToolChoice'), ('public', 'User'), ('public', 'Seed'), ('public', 'N'), ('public', 'Stop'), ('public', 'FrequencyPenalty'), ('public', 'PresencePenalty'), ('public', 'LogitBias'), ('public', 'Logprobs'), ('public', 'TopLogprobs'), ('public', 'Role'), ('public', 'Content'), ('public', 'Name'), ('public', 'FunctionCall'), ('public', 'ToolCalls'), ('public', 'Name'), ('public', 'Description'), ('public', 'Parameters'), ('public', 'Type'), ('public', 'Function'), ('public', 'Name'), ('public', 'Arguments'), ('public', 'Id'), ('public', 'Type'), ('public', 'Function')]
+
+5. Index: 5284
+   Getters: 20, Setters: 28
+   Message: (empty)
+   Getter fields: [('public', 'Name'), ('public', 'Description'), ('public', 'Protocol'), ('public', 'Version'), ('public', 'Endpoint'), ('public', 'ConnectionUrl'), ('public', 'ConnectedAt'), ('public', 'Message'), ('public', 'Name'), ('public', 'Description'), ('public', 'Type'), ('public', 'Description'), ('public', 'DefaultValue'), ('public', 'HowToUseTools'), ('public', 'ExampleCall'), ('public', 'ErrorMessage'), ('public', 'ServiceName'), ('public', 'ServiceInfo'), ('public', 'ConnectionStatus'), ('public', 'UsageGuide')]
+   Setter fields: [('public', 'Name'), ('public', 'Description'), ('public', 'Protocol'), ('public', 'Version'), ('public', 'Endpoint'), ('public', 'Tags'), ('public', 'Connected'), ('public', 'ConnectionUrl'), ('public', 'ConnectedAt'), ('public', 'Message'), ('public', 'Name'), ('public', 'Description'), ('public', 'Parameters'), ('public', 'Enabled'), ('public', 'Type'), ('public', 'Description'), ('public', 'Required'), ('public', 'DefaultValue'), ('public', 'HowToUseTools'), ('public', 'ExampleCall'), ('public', 'AvailableOperations'), ('public', 'Success'), ('public', 'ErrorMessage'), ('public', 'ServiceName'), ('public', 'ServiceInfo'), ('public', 'ConnectionStatus'), ('public', 'AvailableTools'), ('public', 'UsageGuide')]
+
+6. Index: 144
+   Getters: 23, Setters: 23
+   Message: (empty)
+   Getter fields: [('public', 'AccessKeyId'), ('public', 'AccessKeyId'), ('public', 'AccessKeySecret'), ('public', 'AccessKeySecret'), ('public', 'RegionId'), ('public', 'RegionId'), ('public', 'DBInstanceId'), ('public', 'DBInstanceId'), ('public', 'ManagerAccount'), ('public', 'ManagerAccount'), ('public', 'ManagerAccountPassword'), ('public', 'Namespace'), ('public', 'NamespacePassword'), ('public', 'Metrics'), ('public', 'ReadTimeout'), ('public', 'EmbeddingDimension'), ('public', 'UserAgent'), ('public', 'ManagerAccountPassword'), ('public', 'Namespace'), ('public', 'NamespacePassword'), ('public', 'Metrics'), ('public', 'ReadTimeout'), ('public', 'EmbeddingDimension')]
+   Setter fields: [('public', 'AccessKeyId'), ('public', 'AccessKeyId'), ('public', 'AccessKeySecret'), ('public', 'AccessKeySecret'), ('public', 'RegionId'), ('public', 'RegionId'), ('public', 'DBInstanceId'), ('public', 'DBInstanceId'), ('public', 'ManagerAccount'), ('public', 'ManagerAccount'), ('public', 'ManagerAccountPassword'), ('public', 'Namespace'), ('public', 'NamespacePassword'), ('public', 'Metrics'), ('public', 'ReadTimeout'), ('public', 'EmbeddingDimension'), ('public', 'UserAgent'), ('public', 'ManagerAccountPassword'), ('public', 'Namespace'), ('public', 'NamespacePassword'), ('public', 'Metrics'), ('public', 'ReadTimeout'), ('public', 'EmbeddingDimension')]
+
+7. Index: 4789
+   Getters: 20, Setters: 21
+   Message: (empty)
+   Getter fields: [('public', 'Model'), ('public', 'Input'), ('public', 'Parameters'), ('public', 'Prompt'), ('public', 'Width'), ('public', 'Height'), ('public', 'Duration'), ('public', 'Fps'), ('public', 'Seed'), ('public', 'NumFrames'), ('public', 'RequestId'), ('public', 'Code'), ('public', 'Message'), ('public', 'Output'), ('public', 'Usage'), ('public', 'TaskId'), ('public', 'TaskStatus'), ('public', 'Url'), ('public', 'VideoUrl'), ('public', 'TotalTokens')]
+   Setter fields: [('public', 'Model'), ('public', 'Input'), ('public', 'Parameters'), ('public', 'Prompt'), ('public', 'Width'), ('public', 'Height'), ('public', 'Duration'), ('public', 'Fps'), ('public', 'Seed'), ('public', 'NumFrames'), ('public', 'RequestId'), ('public', 'Code'), ('public', 'Message'), ('public', 'Output'), ('public', 'Usage'), ('public', 'TaskId'), ('public', 'TaskStatus'), ('public', 'Results'), ('public', 'Url'), ('public', 'VideoUrl'), ('public', 'TotalTokens')]
+
+8. Index: 5385
+   Getters: 17, Setters: 23
+   Message: (empty)
+   Getter fields: [('public', 'Action'), ('public', 'FilePath'), ('public', 'WorksheetName'), ('public', 'CellRange'), ('public', 'StartRow'), ('public', 'EndRow'), ('public', 'MaxRows'), ('public', 'AppendMode'), ('public', 'BatchSize'), ('public', 'AutoDetectFormat'), ('public', 'DataTypeInference'), ('public', 'ProgressTracking'), ('public', 'CurrentToolStateString'), ('public', 'Name'), ('public', 'Description'), ('public', 'Parameters'), ('public', 'ServiceGroup')]
+   Setter fields: [('public', 'Action'), ('public', 'FilePath'), ('public', 'WorksheetName'), ('public', 'Worksheets'), ('public', 'Data'), ('public', 'CellUpdates'), ('public', 'Keywords'), ('public', 'SearchColumns'), ('public', 'RowIndices'), ('public', 'CellRange'), ('public', 'Formatting'), ('public', 'Formulas'), ('public', 'StartRow'), ('public', 'EndRow'), ('public', 'MaxRows'), ('public', 'AppendMode'), ('public', 'BatchSize'), ('public', 'Headers'), ('public', 'SourceFiles'), ('public', 'AutoDetectFormat'), ('public', 'ColumnMapping'), ('public', 'DataTypeInference'), ('public', 'ProgressTracking')]
+
+9. Index: 2819
+   Getters: 18, Setters: 18
+   Message: (empty)
+   Getter fields: [('public', 'SseExportContextPath'), ('public', 'ServiceGroup'), ('public', 'Username'), ('public', 'Password'), ('public', 'AccessKey'), ('public', 'SecretKey'), ('public', 'Ip'), ('public', 'Endpoint'), ('public', 'NacosProperties'), ('public', 'SseExportContextPath'), ('public', 'ServiceGroup'), ('public', 'Username'), ('public', 'Password'), ('public', 'AccessKey'), ('public', 'SecretKey'), ('public', 'Ip'), ('public', 'Endpoint'), ('public', 'NacosProperties')]
+   Setter fields: [('public', 'ServiceRegister'), ('public', 'SseExportContextPath'), ('public', 'ServiceGroup'), ('public', 'Username'), ('public', 'Password'), ('public', 'AccessKey'), ('public', 'SecretKey'), ('public', 'Ip'), ('public', 'Endpoint'), ('public', 'ServiceRegister'), ('public', 'SseExportContextPath'), ('public', 'ServiceGroup'), ('public', 'Username'), ('public', 'Password'), ('public', 'AccessKey'), ('public', 'SecretKey'), ('public', 'Ip'), ('public', 'Endpoint')]
+
+10. Index: 3500
+   Getters: 17, Setters: 19
+   Message: (empty)
+   Getter fields: [('public', 'Model'), ('public', 'MemoryConfig'), ('public', 'Instruction'), ('public', 'Id'), ('public', 'Text'), ('public', 'Text'), ('public', 'Role'), ('public', 'Mode'), ('public', 'Name'), ('public', 'Provider'), ('public', 'CompletionParams'), ('public', 'MaxTokens'), ('public', 'Enabled'), ('public', 'WindowSize'), ('public', 'WindowEnabled'), ('public', 'IncludeLastMessage'), ('public', 'LastMessageTemplate')]
+   Setter fields: [('public', 'Model'), ('public', 'PromptTemplate'), ('public', 'MemoryConfig'), ('public', 'Instruction'), ('public', 'Classes'), ('public', 'Id'), ('public', 'Text'), ('public', 'Text'), ('public', 'Role'), ('public', 'Mode'), ('public', 'Name'), ('public', 'Provider'), ('public', 'CompletionParams'), ('public', 'MaxTokens'), ('public', 'Enabled'), ('public', 'WindowSize'), ('public', 'WindowEnabled'), ('public', 'IncludeLastMessage'), ('public', 'LastMessageTemplate')]
+
+11. Index: 2813
+   Getters: 18, Setters: 17
+   Message: (empty)
+   Getter fields: [('public', 'ContextPath'), ('public', 'Group'), ('public', 'Username'), ('public', 'Password'), ('public', 'AccessKey'), ('public', 'SecretKey'), ('public', 'Ip'), ('public', 'Endpoint'), ('public', 'NacosProperties'), ('public', 'SseExportContextPath'), ('public', 'ServiceGroup'), ('public', 'Username'), ('public', 'Password'), ('public', 'AccessKey'), ('public', 'SecretKey'), ('public', 'Ip'), ('public', 'Endpoint'), ('public', 'NacosProperties')]
+   Setter fields: [('public', 'ContextPath'), ('public', 'Group'), ('public', 'Username'), ('public', 'Password'), ('public', 'AccessKey'), ('public', 'SecretKey'), ('public', 'Ip'), ('public', 'Endpoint'), ('public', 'ServiceRegister'), ('public', 'SseExportContextPath'), ('public', 'ServiceGroup'), ('public', 'Username'), ('public', 'Password'), ('public', 'AccessKey'), ('public', 'SecretKey'), ('public', 'Ip'), ('public', 'Endpoint')]
+
+12. Index: 2814
+   Getters: 18, Setters: 17
+   Message: (empty)
+   Getter fields: [('public', 'ContextPath'), ('public', 'Group'), ('public', 'Username'), ('public', 'Password'), ('public', 'AccessKey'), ('public', 'SecretKey'), ('public', 'Ip'), ('public', 'Endpoint'), ('public', 'NacosProperties'), ('public', 'SseExportContextPath'), ('public', 'ServiceGroup'), ('public', 'Username'), ('public', 'Password'), ('public', 'AccessKey'), ('public', 'SecretKey'), ('public', 'Ip'), ('public', 'Endpoint'), ('public', 'NacosProperties')]
+   Setter fields: [('public', 'ContextPath'), ('public', 'Group'), ('public', 'Username'), ('public', 'Password'), ('public', 'AccessKey'), ('public', 'SecretKey'), ('public', 'Ip'), ('public', 'Endpoint'), ('public', 'ServiceRegister'), ('public', 'SseExportContextPath'), ('public', 'ServiceGroup'), ('public', 'Username'), ('public', 'Password'), ('public', 'AccessKey'), ('public', 'SecretKey'), ('public', 'Ip'), ('public', 'Endpoint')]
+
+13. Index: 3497
+   Getters: 15, Setters: 19
+   Message: (empty)
+   Getter fields: [('public', 'Name'), ('public', 'Description'), ('public', 'RequestTemplate'), ('public', 'ResponseTemplate'), ('public', 'Name'), ('public', 'Description'), ('public', 'Type'), ('public', 'DefaultValue'), ('public', 'Items'), ('public', 'Position'), ('public', 'Key'), ('public', 'Value'), ('public', 'Body'), ('public', 'PrependBody'), ('public', 'AppendBody')]
+   Setter fields: [('public', 'Name'), ('public', 'Description'), ('public', 'Args'), ('public', 'RequestTemplate'), ('public', 'ResponseTemplate'), ('public', 'Name'), ('public', 'Description'), ('public', 'Type'), ('public', 'Required'), ('public', 'DefaultValue'), ('public', 'EnumValues'), ('public', 'Items'), ('public', 'Properties'), ('public', 'Position'), ('public', 'Key'), ('public', 'Value'), ('public', 'Body'), ('public', 'PrependBody'), ('public', 'AppendBody')]
+
+14. Index: 5286
+   Getters: 15, Setters: 17
+   Message: (empty)
+   Getter fields: [('public', 'ContentType'), ('public', 'Content'), ('public', 'RawResponse'), ('public', 'ContentSize'), ('public', 'ExecutionStart'), ('public', 'ExecutionEnd'), ('public', 'ExecutionDurationMs'), ('public', 'ProtocolUsed'), ('public', 'ConnectionUrl'), ('public', 'RetryCount'), ('public', 'ErrorMessage'), ('public', 'ServiceName'), ('public', 'ToolName'), ('public', 'Result'), ('public', 'ExecutionMeta')]
+   Setter fields: [('public', 'ContentType'), ('public', 'Content'), ('public', 'RawResponse'), ('public', 'ContentSize'), ('public', 'ExecutionStart'), ('public', 'ExecutionEnd'), ('public', 'ExecutionDurationMs'), ('public', 'ProtocolUsed'), ('public', 'ConnectionUrl'), ('public', 'RetryCount'), ('public', 'Success'), ('public', 'ErrorMessage'), ('public', 'ServiceName'), ('public', 'ToolName'), ('public', 'ExecutionParameters'), ('public', 'Result'), ('public', 'ExecutionMeta')]
+
+15. Index: 1489
+   Getters: 15, Setters: 16
+   Message: (empty)
+   Getter fields: [('public', 'Host'), ('public', 'Port'), ('public', 'Index'), ('public', 'QueryField'), ('public', 'Username'), ('public', 'Password'), ('public', 'MaxResults'), ('public', 'Host'), ('public', 'Port'), ('public', 'Index'), ('public', 'QueryField'), ('public', 'Username'), ('public', 'Password'), ('public', 'MaxResults'), ('public', 'Scheme')]
+   Setter fields: [('public', 'Host'), ('public', 'Port'), ('public', 'Index'), ('public', 'QueryField'), ('public', 'Username'), ('public', 'Password'), ('public', 'MaxResults'), ('public', 'Host'), ('public', 'Port'), ('public', 'Nodes'), ('public', 'Index'), ('public', 'QueryField'), ('public', 'Username'), ('public', 'Password'), ('public', 'MaxResults'), ('public', 'Scheme')]
+
+16. Index: 5283
+   Getters: 9, Setters: 22
+   Message: (empty)
+   Getter fields: [('public', 'FullUrl'), ('public', 'HttpStatusCode'), ('public', 'ResponseTimeMs'), ('public', 'NetworkError'), ('public', 'ErrorMessage'), ('public', 'ServiceName'), ('public', 'DebugTimestamp'), ('public', 'ServiceStatus'), ('public', 'ConnectionDiagnosis')]
+   Setter fields: [('public', 'FoundInVectorStore'), ('public', 'FoundInNacos'), ('public', 'RemoteConfigValid'), ('public', 'ServiceRefValid'), ('public', 'EndpointAvailable'), ('public', 'ConnectionCached'), ('public', 'ServiceInfo'), ('public', 'FullUrl'), ('public', 'BaseUrlReachable'), ('public', 'EndpointReachable'), ('public', 'HttpStatusCode'), ('public', 'ResponseTimeMs'), ('public', 'DiagnosisDetails'), ('public', 'NetworkError'), ('public', 'Success'), ('public', 'ErrorMessage'), ('public', 'ServiceName'), ('public', 'DebugTimestamp'), ('public', 'ServiceStatus'), ('public', 'ConnectionDiagnosis'), ('public', 'TroubleshootingSuggestions'), ('public', 'SystemInfo')]
+
+17. Index: 1268
+   Getters: 17, Setters: 12
+   Message: (empty)
+   Getter fields: [('public', 'Uri'), ('public', 'Database'), ('public', 'Collection'), ('public', 'Query'), ('public', 'ChunkSize'), ('public', 'Overlap'), ('public', 'VectorDimensions'), ('public', 'VectorField'), ('public', 'BatchSize'), ('public', 'PoolSize'), ('public', 'ConnectTimeout'), ('public', 'URL'), ('public', 'URI'), ('public', 'File'), ('public', 'Filename'), ('public', 'Description'), ('public', 'InputStream')]
+   Setter fields: [('public', 'Uri'), ('public', 'Database'), ('public', 'Collection'), ('public', 'Query'), ('public', 'ChunkSize'), ('public', 'Overlap'), ('public', 'EnableVectorization'), ('public', 'VectorDimensions'), ('public', 'VectorField'), ('public', 'BatchSize'), ('public', 'PoolSize'), ('public', 'ConnectTimeout')]
+
+18. Index: 3144
+   Getters: 14, Setters: 14
+   Message: (empty)
+   Getter fields: [('public', 'Action'), ('public', 'Url'), ('public', 'Index'), ('public', 'Text'), ('public', 'Script'), ('public', 'ScrollAmount'), ('public', 'TabId'), ('public', 'Action'), ('public', 'Url'), ('public', 'Index'), ('public', 'Text'), ('public', 'Script'), ('public', 'ScrollAmount'), ('public', 'TabId')]
+   Setter fields: [('public', 'Action'), ('public', 'Url'), ('public', 'Index'), ('public', 'Text'), ('public', 'Script'), ('public', 'ScrollAmount'), ('public', 'TabId'), ('public', 'Action'), ('public', 'Url'), ('public', 'Index'), ('public', 'Text'), ('public', 'Script'), ('public', 'ScrollAmount'), ('public', 'TabId')]
+
+19. Index: 1251
+   Getters: 26, Setters: 0
+   Message: (empty)
+   Getter fields: [('private', 'PageContent'), ('private', 'DatabaseContent'), ('private', 'ResourceMetadata'), ('public', 'Metadata'), ('public', 'URL'), ('public', 'URI'), ('public', 'File'), ('public', 'Filename'), ('public', 'Description'), ('public', 'InputStream'), ('public', 'ResourceType'), ('public', 'ResourceId'), ('public', 'Source'), ('private', 'PageContent'), ('private', 'DatabaseContent'), ('private', 'ResourceMetadata'), ('public', 'Metadata'), ('public', 'URL'), ('public', 'URI'), ('public', 'File'), ('public', 'Filename'), ('public', 'Description'), ('public', 'InputStream'), ('public', 'ResourceType'), ('public', 'ResourceId'), ('public', 'Source')]
+
+20. Index: 1313
+   Getters: 12, Setters: 14
+   Message: (empty)
+   Getter fields: [('public', 'Id'), ('public', 'Title'), ('public', 'Path'), ('public', 'Type'), ('public', 'Description'), ('public', 'Parent'), ('public', 'Id'), ('public', 'Title'), ('public', 'Path'), ('public', 'Type'), ('public', 'Description'), ('public', 'Parent')]
+   Setter fields: [('public', 'Id'), ('public', 'Title'), ('public', 'Path'), ('public', 'Type'), ('public', 'Description'), ('public', 'Parent'), ('public', 'SubPages'), ('public', 'Id'), ('public', 'Title'), ('public', 'Path'), ('public', 'Type'), ('public', 'Description'), ('public', 'Parent'), ('public', 'SubPages')]
+
+
+====================================================================================================
+SUMMARY STATISTICS
+====================================================================================================
+Total getters added/modified: 2417
+Total setters added/modified: 1430
+Total getter/setter changes: 3847

@@ -1,0 +1,385 @@
+====================================================================================================
+DETAILED GETTER/SETTER COMMITS ANALYSIS
+====================================================================================================
+
+1. COMMIT INDEX: 5701
+   Getters: 58, Setters: 39
+   Patch size: 19156 bytes
+   Message: (empty message)
+
+   Patch snippet:
+   ------------------------------------------------------------------------------------------------
+   @@ -26,95 +26,273 @@ public class Mem0ChatMemoryProperties {
+    	public static final String MEM0_PREFIX = "spring.ai.alibaba.mem0";
+    
+    	private Client client;
+   -
+    	private Server server;
+    
+   -	public static class Client {
+   +	private Mem0ChatMemoryProperties(Builder builder) {
+   +		this.client = builder.client;
+   +		this.server = builder.server;
+   +	}
+    
+   -		private String baseUrl = "http://localhost:8888";
+   +	public Client getClient() {
+   +		return client;
+   +	}
+    
+   -		private boolean enableCache = true;
+   +	public Server getServer() {
+   +		return server;
+   +	}
+    
+   -		private int timeoutSeconds = 30;
+   +	public static class Builder {
+   +		private Client client;
+   +		private Server server;
+    
+   -		private int maxRetryAttempts = 3;
+   +		public Builder client(Client client) {
+   ------------------------------------------------------------------------------------------------
+
+2. COMMIT INDEX: 5702
+   Getters: 58, Setters: 39
+   Patch size: 19156 bytes
+   Message: (empty message)
+
+   Patch snippet:
+   ------------------------------------------------------------------------------------------------
+   @@ -26,95 +26,273 @@ public class Mem0ChatMemoryProperties {
+    	public static final String MEM0_PREFIX = "spring.ai.alibaba.mem0";
+    
+    	private Client client;
+   -
+    	private Server server;
+    
+   -	public static class Client {
+   +	private Mem0ChatMemoryProperties(Builder builder) {
+   +		this.client = builder.client;
+   +		this.server = builder.server;
+   +	}
+    
+   -		private String baseUrl = "http://localhost:8888";
+   +	public Client getClient() {
+   +		return client;
+   +	}
+    
+   -		private boolean enableCache = true;
+   +	public Server getServer() {
+   +		return server;
+   +	}
+    
+   -		private int timeoutSeconds = 30;
+   +	public static class Builder {
+   +		private Client client;
+   +		private Server server;
+    
+   -		private int maxRetryAttempts = 3;
+   +		public Builder client(Client client) {
+   ------------------------------------------------------------------------------------------------
+
+3. COMMIT INDEX: 5406
+   Getters: 39, Setters: 46
+   Patch size: 12023 bytes
+   Message: (empty message)
+
+   Patch snippet:
+   ------------------------------------------------------------------------------------------------
+   @@ -0,0 +1,629 @@
+   +/*
+   + * Copyright 2025 the original author or authors.
+   + *
+   + * Licensed under the Apache License, Version 2.0 (the "License");
+   + * you may not use this file except in compliance with the License.
+   + * You may obtain a copy of the License at
+   + *
+   + *      https://www.apache.org/licenses/LICENSE-2.0
+   + *
+   + * Unless required by applicable law or agreed to in writing, software
+   + * distributed under the License is distributed on an "AS IS" BASIS,
+   + * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   + * See the License for the specific language governing permissions and
+   + * limitations under the License.
+   + */
+   +package com.alibaba.cloud.ai.example.manus.adapter.model;
+   +
+   +import com.fasterxml.jackson.annotation.JsonProperty;
+   +import java.util.List;
+   +
+   +/**
+   + * OpenAI Chat Completion Response Model Compatible with OpenAI API specification for
+   + * integration with Cherry Studio
+   + */
+   +public class OpenAIResponse {
+   +
+   +	private String id;
+   +
+   +	private String obj
+   ------------------------------------------------------------------------------------------------
+
+4. COMMIT INDEX: 5405
+   Getters: 31, Setters: 35
+   Patch size: 9132 bytes
+   Message: (empty message)
+
+   Patch snippet:
+   ------------------------------------------------------------------------------------------------
+   @@ -0,0 +1,489 @@
+   +/*
+   + * Copyright 2025 the original author or authors.
+   + *
+   + * Licensed under the Apache License, Version 2.0 (the "License");
+   + * you may not use this file except in compliance with the License.
+   + * You may obtain a copy of the License at
+   + *
+   + *      https://www.apache.org/licenses/LICENSE-2.0
+   + *
+   + * Unless required by applicable law or agreed to in writing, software
+   + * distributed under the License is distributed on an "AS IS" BASIS,
+   + * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   + * See the License for the specific language governing permissions and
+   + * limitations under the License.
+   + */
+   +package com.alibaba.cloud.ai.example.manus.adapter.model;
+   +
+   +import com.fasterxml.jackson.annotation.JsonProperty;
+   +import java.util.List;
+   +import java.util.Map;
+   +
+   +/**
+   + * OpenAI Chat Completion Request Model Compatible with OpenAI API specification for
+   + * integration with Cherry Studio
+   + */
+   +public class OpenAIRequest {
+   +
+   +	private String model
+   ------------------------------------------------------------------------------------------------
+
+5. COMMIT INDEX: 5284
+   Getters: 20, Setters: 28
+   Patch size: 11581 bytes
+   Message: (empty message)
+
+   Patch snippet:
+   ------------------------------------------------------------------------------------------------
+   @@ -0,0 +1,560 @@
+   +/*
+   + * Copyright 2025-2026 the original author or authors.
+   + *
+   + * Licensed under the Apache License, Version 2.0 (the "License");
+   + * you may not use this file except in compliance with the License.
+   + * You may obtain a copy of the License at
+   + *
+   + *      https://www.apache.org/licenses/LICENSE-2.0
+   + *
+   + * Unless required by applicable law or agreed to in writing, software
+   + * distributed under the License is distributed on an "AS IS" BASIS,
+   + * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   + * See the License for the specific language governing permissions and
+   + * limitations under the License.
+   + */
+   +
+   +package com.alibaba.cloud.ai.mcp.router.model.response;
+   +
+   +import com.fasterxml.jackson.annotation.JsonInclude;
+   +import com.fasterxml.jackson.annotation.JsonProperty;
+   +
+   +import java.util.List;
+   +import java.util.Map;
+   +
+   +/**
+   + * MCP Server 添加响应结果 用于封装添加 MCP Server 的结果，包含服务信息、连接状态和可用工具列表
+   + *
+   + * @author spring-ai-alibaba
+   + * @since 2025.0.0
+   ------------------------------------------------------------------------------------------------
+
+6. COMMIT INDEX: 144
+   Getters: 23, Setters: 23
+   Patch size: 8099 bytes
+   Message: (empty message)
+
+   Patch snippet:
+   ------------------------------------------------------------------------------------------------
+   @@ -3,8 +3,7 @@ package com.alibaba.cloud.ai.dashscope.rag;
+    /**
+     * @author HeYQ
+     * @version 1.0
+   - * @date 2024-10-23 20:22
+   - * @describe
+   + * @since 2024-10-23 20:22
+     */
+    import com.fasterxml.jackson.annotation.JsonInclude;
+    import java.util.HashMap;
+   @@ -13,145 +12,167 @@ import java.util.Map;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public class AnalyticdbConfig {
+    
+   -    private String accessKeyId;
+   +	private String accessKeyId;
+    
+   -    private String accessKeySecret;
+   +	private String accessKeySecret;
+    
+   -    private String regionId;
+   +	private String regionId;
+    
+   -    private String DBInstanceId;
+   +	private String DBInstanceId;
+    
+   -    private String managerAccount;
+   +	private String managerAccount;
+    
+   -    private String managerAccountPassword;
+   ------------------------------------------------------------------------------------------------
+
+7. COMMIT INDEX: 4789
+   Getters: 20, Setters: 21
+   Patch size: 8352 bytes
+   Message: (empty message)
+
+   Patch snippet:
+   ------------------------------------------------------------------------------------------------
+   @@ -0,0 +1,394 @@
+   +/*
+   + * Copyright 2024-2025 the original author or authors.
+   + *
+   + * Licensed under the Apache License, Version 2.0 (the "License");
+   + * you may not use this file except in compliance with the License.
+   + * You may obtain a copy of the License at
+   + *
+   + *      https://www.apache.org/licenses/LICENSE-2.0
+   + *
+   + * Unless required by applicable law or agreed to in writing, software
+   + * distributed under the License is distributed on an "AS IS" BASIS,
+   + * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   + * See the License for the specific language governing permissions and
+   + * limitations under the License.
+   + */
+   +package com.alibaba.cloud.ai.dashscope.api;
+   +
+   +import com.fasterxml.jackson.annotation.JsonInclude;
+   +import com.fasterxml.jackson.annotation.JsonProperty;
+   +import org.springframework.ai.retry.RetryUtils;
+   +import org.springframework.http.ResponseEntity;
+   +import org.springframework.web.client.RestClient;
+   +import org.springframework.web.reactive
+   ------------------------------------------------------------------------------------------------
+
+8. COMMIT INDEX: 5385
+   Getters: 17, Setters: 23
+   Patch size: 47659 bytes
+   Message: (empty message)
+
+   Patch snippet:
+   ------------------------------------------------------------------------------------------------
+   @@ -0,0 +1,1438 @@
+   +/*
+   + * Copyright 2025 the original author or authors.
+   + *
+   + * Licensed under the Apache License, Version 2.0 (the "License");
+   + * you may not use this file except in compliance with the License.
+   + * You may obtain a copy of the License at
+   + *
+   + *      https://www.apache.org/licenses/LICENSE-2.0
+   + *
+   + * Unless required by applicable law or agreed to in writing, software
+   + * distributed under the License is distributed on an "AS IS" BASIS,
+   + * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   + * See the License for the specific language governing permissions and
+   + * limitations under the License.
+   + */
+   +package com.alibaba.cloud.ai.example.manus.tool.excelProcessor;
+   +
+   +import java.io.IOException;
+   +import java.util.ArrayList;
+   +import java.util.HashMap;
+   +import java.util.List;
+   +import java.util.Map;
+   +import java.util.Set;
+   +
+   +import org.slf4j.Logger;
+   +import org.slf4j.LoggerFactory;
+   +
+   +import com.alibaba.cloud.ai.example.manus.tool.AbstractBaseTool
+   ------------------------------------------------------------------------------------------------
+
+9. COMMIT INDEX: 2819
+   Getters: 18, Setters: 18
+   Patch size: 13370 bytes
+   Message: (empty message)
+
+   Patch snippet:
+   ------------------------------------------------------------------------------------------------
+   @@ -53,234 +53,238 @@ import static java.util.Collections.unmodifiableMap;
+     */
+    @ConfigurationProperties(prefix = "spring.ai.alibaba.mcp.nacos")
+    public class NacosMcpRegistryProperties {
+   -    
+   -    public static final String DEFAULT_NAMESPACE = "public";
+   -    
+   -    public static final String DEFAULT_ADDRESS = "127.0.0.1:8848";
+   -    
+   -    private static final Pattern PATTERN = Pattern.compile("-(\\w)");
+   -    
+   -    private static final Logger log = LoggerFactory.getLogger(NacosMcpRegistryProperties.class);
+   -    
+   -    String serverAddr;
+   -    
+   -    String serviceNamespace;
+   -    
+   -    String serviceGroup = "DEFAULT_GROUP";
+   -    
+   -    String username;
+   -    
+   -    String password;
+   -    
+   -    String accessKey;
+   -    
+   -    String secretKey;
+   -    
+   -    String endpoint;
+   -    
+   -    String ip;
+   ------------------------------------------------------------------------------------------------
+
+10. COMMIT INDEX: 3500
+   Getters: 17, Setters: 19
+   Patch size: 6130 bytes
+   Message: (empty message)
+
+   Patch snippet:
+   ------------------------------------------------------------------------------------------------
+   @@ -0,0 +1,292 @@
+   +/*
+   + * Copyright 2024-2025 the original author or authors.
+   + *
+   + * Licensed under the Apache License, Version 2.0 (the "License");
+   + * you may not use this file except in compliance with the License.
+   + * You may obtain a copy of the License at
+   + *
+   + *      https://www.apache.org/licenses/LICENSE-2.0
+   + *
+   + * Unless required by applicable law or agreed to in writing, software
+   + * distributed under the License is distributed on an "AS IS" BASIS,
+   + * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   + * See the License for the specific language governing permissions and
+   + * limitations under the License.
+   + */
+   +package com.alibaba.cloud.ai.model.workflow.nodedata;
+   +
+   +import com.alibaba.cloud.ai.model.Variable;
+   +import com.alibaba.cloud.ai.model.VariableSelector;
+   +import com.alibaba.cloud.ai.model.VariableType;
+   +import com.alibaba.cloud.ai.model.workflow.NodeData;
+   +
+   +import java.util.List;
+   +
+   +/**
+   + * @author HeYQ
+   + * @since 2024-12-12 21:26
+   + */
+   +pub
+   ------------------------------------------------------------------------------------------------
