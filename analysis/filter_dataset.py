@@ -1,17 +1,5 @@
 #!/usr/bin/env python3
-"""
-Filter the combined dataset to the highest-signal examples for the
-next-action prediction task.
 
-Example:
-    python analysis/filter_dataset.py \
-        --input-file data/combined_dataset.json \
-        --output-file data/filtered_dataset.jsonl \
-        --summary-file data/filtered_dataset_summary.json \
-        --max-total-changes 20 \
-        --max-files-per-commit 1 \
-        --min-chunks-per-file 2
-"""
 
 from __future__ import annotations
 

@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
-"""
-Prepare labeled dataset for model training and evaluation.
 
-Converts labeled examples into training-ready format with proper splits.
-"""
 
 from __future__ import annotations
 
@@ -180,7 +176,7 @@ def main():
     save_jsonl(val, output_dir / "val.jsonl")
     save_jsonl(test, output_dir / "test.jsonl")
     
-    print(f"✅ Saved splits:")
+    print(f" Saved splits:")
     print(f"   Train: {len(train)} examples -> {output_dir / 'train.jsonl'}")
     print(f"   Val: {len(val)} examples -> {output_dir / 'val.jsonl'}")
     print(f"   Test: {len(test)} examples -> {output_dir / 'test.jsonl'}")
@@ -192,7 +188,7 @@ def main():
     with stats_path.open("w", encoding="utf-8") as f:
         json.dump(stats, f, indent=2, ensure_ascii=False)
     
-    print(f"✅ Statistics saved to {stats_path}")
+    print(f" Statistics saved to {stats_path}")
     
     # Print summary
     print("\n" + "="*60)

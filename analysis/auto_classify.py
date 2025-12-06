@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
-"""
-Automatic pattern classifier based on heuristics and learned patterns.
 
-Uses the manually labeled examples to build rules, then auto-labels remaining records.
-"""
 
 from __future__ import annotations
 
@@ -285,13 +281,13 @@ def main():
     print("Auto-classifying unlabeled records...")
     new_labels, stats = auto_label_all(records, existing_labels, labels_path)
     
-    print(f"\n✅ Auto-labeled {len(new_labels)} records")
+    print(f"\n Auto-labeled {len(new_labels)} records")
     print("\nPattern distribution:")
     for pattern, count in stats.most_common():
         print(f"  {pattern}: {count}")
     
-    print(f"\n📁 Labels saved to {labels_path}")
-    print(f"📊 Total labeled: {len(existing_labels) + len(new_labels)}/{len(records)}")
+    print(f"\n Labels saved to {labels_path}")
+    print(f"  Total labeled: {len(existing_labels) + len(new_labels)}/{len(records)}")
 
 
 if __name__ == "__main__":
